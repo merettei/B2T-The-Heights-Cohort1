@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task Averaging Letters</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+		// Declare string variables
+		var str1 = "we";
+		var str2 = "love";
+		var str3 = "JavaScript";
+	
+
+		// Find the number of letters in each variable
+		var lstr1 = str1.length;
+		var lstr2 = str2.length;
+		var lstr3 = str3.length;
+
+
+		//Find the average of letters used per variable
+		var sum_strs = lstr1 + lstr2 +lstr3;
+		var savg = sum_strs/3; // more that 2 decimal places use toFixed()
+
+
+		//Send message to the console
+		 console.log("The average letters used " + savg.toFixed(2) + " per variable.");
+</script>
+</body>
+</html>
