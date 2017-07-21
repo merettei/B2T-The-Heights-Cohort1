@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student's Average</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        // create array grade with students grades
+        
+        var asgavg;                                 //  average grade letter value
+        grades = [80, 77, 88, 95, 68];              // grades array
+        gradeLetters = ["A", "B", "C", "D", "F"];   // Letter grade array
+        lgrades = grades.length;                    // number of elements in grade array
+        lgradeLetters = gradeLetters.length;        // number of elements in  letter grade array
+
+        // values from grades array
+
+        var grade1 = parseInt(grades[(lgrades - lgrades)]); 
+        var grade2 = parseInt(grades[(lgrades - 4)]);
+        var grade3 = parseInt(grades[(lgrades - 3)]);
+        var grade4 = parseInt(grades[(lgrades - 2)]);
+        var grade5 = parseInt(grades[lgrades -1]);
+
+        // Find the student's average
+
+        sum_grades = grade1 + grade2 + grade3 + grade4 + grade5; // Calculate Grades Sum
+
+        sgrade_avg = Math.round((sum_grades/(lgrades)));        // Calculate Average Grade
+
+
+        // Find the student's letter grade using if statements
+
+        if (sgrade_avg >= 90 && sgrade_avg <= 100) {          // Letter grade A
+                asgavg = gradeLetters[lgradeLetters-lgradeLetters];
+        } else if (sgrade_avg >= 80 && sgrade_avg <=89) {       // Letter Grade B
+                asgavg = gradeLetters[(lgradeLetters - 4)];
+        } else if(sgrade_avg >= 71 && sgrade_avg <=79) {       // Letter Grade C
+                asgavg = gradeLetters[(lgradeLetters -3)];      
+        } else if(sgrade_avg >= 60 && sgrade_avg <=70) {       // Letter Grade D
+                asgavg = gradeLetters[(lgradeLetters -2)];
+        } else {
+                asgavg = gradeLetters[lgradeLetters -1];        // Letter Grade F
+        }
+
+        // console.log results
+
+        console.log("The Student's Average is " + asgavg + ".");
+
+    </script>
+
+</body>
+</html>

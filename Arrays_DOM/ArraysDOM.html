@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task: Arrays and DOM</title>
+</head>
+<body>
+
+	<!-- Create empty HTML element -->
+	<p id="empty1"></p>
+	<p id="empty2"></p>
+	<p id="empty3"></p>
+	<p id="empty4"></p>
+
+		<script type="text/javascript">
+		// Task: Arrays and DOM
+			
+			var fruits = ["apple", "orange", "kiwi"];  //Declare fruits array
+			
+			//Create empty HTML element and diplay elements separated by commas
+			
+			var fruits_list = fruits.toString();	//Convert fruits array to string
+			
+			//replace empty p element with fruits list
+			document.getElementById('empty1').innerHTML = "Fruit List: " + fruits_list;
+
+
+
+			//Use prompt("Add more fruit") to add an element to the end of the array
+			
+			fruits.push(prompt("Add more fruit")); // adds a fruit to fruits array
+			
+			var fruits_alist = fruits.toString();	//convert fruits array to string
+			
+			//replace empty p element with fruits list
+			document.getElementById('empty2').innerHTML = "Fruit List: " + fruits_alist;
+			
+
+
+			//Remove the first element in the array
+			
+			fruits.shift(); // remove first element of fruits array			
+			
+			var fruits_shiftlist = fruits.toString(); //convert fruits array to string
+			
+			//replace empty p element with fruits list
+			document.getElementById('empty3').innerHTML = "Fruit List: " + fruits_shiftlist;
+
+			
+
+			//Sort the elements
+			fruits.sort();
+			
+			//Display elements separated by "with" in HTML text element			
+			
+			var fruitsw = [fruits.join(" with ")]; // array element separated by with
+			
+			var fruits_slist = fruitsw.toString(); // converts fruits array to string
+			
+			//replace empty p element with fruits list
+			document.getElementById('empty4').innerHTML = "Fruit List: " + fruits_slist;
+
+		</script>
+
+</body>
+</html>

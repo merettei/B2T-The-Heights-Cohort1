@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 2_CuriousDates</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		// Task 2 Curious Dates
+
+			// Create Date Objects
+
+			var cdate = new Date(); // Data object w/ todays date
+
+			var ddate = new Date(2038, 0, 1); // Data object w/ desired date 1/1/2038
+
+
+		// Calculate Number of Day Until Desired Date
+
+			// Convert Dates to Milliseconds
+
+			var mspday = 24* 60 * 60 * 1000; // Milliseconds/Day
+
+			var cdate_ms = cdate.getTime();  // convert cddate to Milliseconds
+
+			var ddate_ms = ddate.getTime();  // convert ddate to Milliseconds
+
+
+			//Calculate # days in msec, msec to Days, date object to string 
+
+			var num_days_until_ms = ddate_ms - cdate_ms // number of days until ddate in Milliseconds 
+
+			var num_days_until = Math.ceil(num_days_until_ms/mspday); // convert number days until ddate to days and roundup
+
+			var fdate = ddate.toLocaleDateString(); // convert ddate to string
+
+
+			// Diplay in console
+
+			console.log("There are " + num_days_until + " days until " + fdate + "."); // Dislay answer in the console
+
+	</script>
+
+</body>
+</html>

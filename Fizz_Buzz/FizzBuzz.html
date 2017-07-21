@@ -1,0 +1,43 @@
+<!-- 071917 LOOPS Task Even or Odd Numbers-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 2 Fizz Buzz</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+	
+	/* 071917 LOOPS Task 2 Fizz Buzz
+ 	Create program that iterates integers from 1 to 100
+ 	Print Fizz is number is multiple of 3
+ 	Print Buzz if number is multiple of 5
+ 	Print FizzBuzz if number is multiple of 3 & 5
+ 	Print numbers not muliple of 3 and/or 5 
+ 	*/
+
+		// create while loop
+
+		var nums = 1;  										// Step I Initalize counter start number
+
+		while(nums < 101){									// Step II Condition 1 to 100
+			if(nums%3 == 0 && nums%5 == 0){
+					console.log("FizzBuzz");				// mutilples of 3 & 5 print FizzBuzz
+			}		
+			else if(nums%3 == 0 && nums%5 !== 0){
+					console.log("Fizz");					// Multiples of 3 print Fizz
+			}
+			else if(nums%3 !== 0 && nums%5 == 0){
+					console.log("Buzz");					// multiples of 5 print Buzz
+			}
+			else{
+				console.log(nums);							// print all numbers not factors of 3
+			}
+			nums++;											// Step III Increment Counter
+			}
+		
+	</script>
+
+</body>
+</html>
