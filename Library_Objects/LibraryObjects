@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Library Objects</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+       // given library array of book objects 
+    var library = [
+        {author: "Bill Gates", title: "The Road Ahead", readingStatus: true},
+        {author: "Steve Jobs", title: "Walter Isaacson", readingStatus: true},
+        {author: "Suzanne Collins", title: "Mockingjay: the Final book of the Hunger Games", readingStatus: false}];
+
+    var lLibrary = library.length; // length of array library
+
+    // cycle through Library array to choose book objects
+    for (i = 0; i < lLibrary; i++) { 
+        if (library[i].readingStatus == true) { //  true for output results to console
+            console.log("Already read " + library[i].title + " by " + library[i].author);
+        } else {
+            console.log("You still need to read " + library[i].title + " by " + library[i].author); // false output results to console
+        }
+        }
+        
+    </script>
+
+</body>
+</html>
