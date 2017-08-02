@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Displaying Names</title>
+</head>
+<body>
+   
+    <form> <!--  form input first name and last name -->
+        First Name: 
+        <input type="text" id="fname" placeholder="Enter First Name">
+
+        Last Name: 
+        <input type="text" id ="lname" placeholder="Enter Last Name">
+        
+        <!-- Submit Button and call function getFormValue -->
+        <input type="button" value="submit" onclick="getFormValue()" >
+    </form>
+    <h3>Names</h3>
+    <p id="display"></p> <!-- empty p element id display-->
+
+        <script type="text/javascript">
+            
+        //Declare Function retieves and displays text from form
+        function getFormValue(){
+            var fname = document.getElementById("fname").value;
+            var lname  = document.getElementById("lname").value;
+            document.getElementById("display").innerHTML +=  fname + " " + lname + "<br>" ;
+       // }
+        // Reset Text Boxes
+            document.getElementById("fname").innerHTML = placeholder.reset(); // += " "; //"First Name";
+            document.getElementById("lname").innerHTML = reset(); //= ;// = "Last Name";
+
+        }
+                   
+        </script>
+
+</body>
+</html>

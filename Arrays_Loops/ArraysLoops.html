@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays and Loops</title>
+</head>
+<body>
+	<!-- Empty P element id empty -->
+	<p id="empty"></p> 
+	
+		<script type="text/javascript">
+			
+			// Create Given Arrays and Variables
+			var	color = ["Blue", 
+						 "Green",
+						 "Red", 
+						 "Orange",
+						 "Violet", 
+						 "Indigo", 
+						 "Yellow"];
+
+			var	lColor = color.length;	// length of color array
+				
+			var	o = ["th",
+					 "st", 
+					 "nd", 
+					 "rd"];
+
+			var i = 0, 		// counter
+				cIndex,		// color array index
+				oIndex,		// o array index
+				num;		// list choice number
+
+			//Match order with color and insert into empty element
+			for (var i = 0; i < lColor; i++)  // loop through color array
+				if (i == 0 && i <=2) {		  // match o & color array
+					cIndex = i;
+					oIndex = i + 1;
+					num = i + 1;
+					// Insert text  P Element id empty
+					document.getElementById("empty").innerHTML += num
+					 + o[oIndex] + " choice is " + color[cIndex] + ".<br>"; 
+				} else {				  // match o & color array th #>3
+					cIndex = i;
+					oIndex = 0;
+					num = i + 1;
+					// Insert text  P Element id empty
+				 document.getElementById("empty").innerHTML += num 
+				 + o[oIndex] + " choice is " + color[cIndex] + ".<br>";
+				}
+	</script>	
+
+</body>
+</html>
